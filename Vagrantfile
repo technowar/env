@@ -44,6 +44,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.synced_folder "project/", "/var/nodevagrant/project/"
 	config.vm.synced_folder "resources/", "/var/nodevagrant/resources/"
 
+	config.vm.provision "shell", path: "setup/bootstrap.sh"
+
   # Provider-specific configuration so you can fine-tune various
   # backing providers for Vagrant. These expose provider-specific options.
   # Example for VirtualBox:
