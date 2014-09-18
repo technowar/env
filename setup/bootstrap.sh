@@ -12,10 +12,6 @@ gem install hub
 curl -sL https://deb.nodesource.com/setup | sudo bash -
 apt-get install nodejs -y -q
 
-mv node-v0.10.26-linux-x64/ /opt/node/
-ln -s /opt/node/bin/node /usr/bin/node
-ln -s /opt/node/bin/npm /usr/bin/npm
-
 npm install -g bower
 npm install -g express
 npm install -g express-generator
