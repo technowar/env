@@ -1,16 +1,16 @@
 apt-get update -y -q
 
-apt-get install build-essential
-apt-get install vim
-apt-get install git
-apt-get install rake
-apt-get install htop
-apt-get install mongodb
+apt-get install build-essential -y -q
+apt-get install vim -y -q
+apt-get install git -y -q
+apt-get install rake -y -q
+apt-get install htop -y -q
+apt-get install mongodb -y -q
 
 gem install hub
 
-wget --quiet http://nodejs.org/dist/v0.10.26/node-v0.10.26-linux-x64.tar.gz
-tar -zxf node-v0.10.26-linux-x64.tar.gz
+curl -sL https://deb.nodesource.com/setup | sudo bash -
+apt-get install nodejs -y -q
 
 mv node-v0.10.26-linux-x64/ /opt/node/
 ln -s /opt/node/bin/node /usr/bin/node
