@@ -5,7 +5,6 @@ apt-get install vim -y -q
 apt-get install git -y -q
 apt-get install rake -y -q
 apt-get install htop -y -q
-apt-get install mongodb -y -q
 
 gem install hub
 
@@ -18,6 +17,5 @@ npm install -g express-generator
 npm install -g grunt
 npm install -g grunt-cli
 npm install -g hotnode
-npm install -g mongoose
 npm install -g webit
 npm install -g yo

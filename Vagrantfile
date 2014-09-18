@@ -17,16 +17,17 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # `vagrant box outdated`. This is not recommended.
   # config.vm.box_check_update = false
 
-	config.vm.hostname = "nodevagrant"
-
   # Create a forwarded port mapping which allows access to a specific port
   # within the machine from a port on the host machine. In the example below,
   # accessing "localhost:8080" will access port 80 on the guest machine.
-  # config.vm.network "forwarded_port", guest: 80, host: 8080
+	config.vm.network :forwarded_port, guest: 8080, host: 8080
+	for port in 3000..3100
+		config.vm.network :forwarded_port, guest: port, host: port
+	end
 
   # Create a private network, which allows host-only access to the machine
   # using a specific IP.
-  config.vm.network :private_network, ip: "192.168.69.69"
+  config.vm.network :private_network, ip: "10.1.43.69"
 
   # Create a public network, which generally matched to bridged network.
   # Bridged networks make the machine appear as another physical device on
@@ -41,10 +42,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # the path on the host to the actual folder. The second argument is
   # the path on the guest to mount the folder. And the optional third
   # argument is a set of non-required options.
-  config.vm.synced_folder "project/", "/var/nodevagrant/project/"
-	config.vm.synced_folder "resources/", "/var/nodevagrant/resources/"
-
-	config.vm.provision "shell", path: "setup/bootstrap.sh"
+  config.vm.synced_folder "project/", "/var/nodevagrant/project/", nfs: true
 
   # Provider-specific configuration so you can fine-tune various
   # backing providers for Vagrant. These expose provider-specific options.
@@ -124,4 +122,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # chef-validator, unless you changed the configuration.
   #
   #   chef.validation_client_name = "ORGNAME-validator"
+
+	config.vm.provision "shell", path: "setup/bootstrap.sh"
+
 end
