@@ -16,8 +16,6 @@ apt-get install nodejs -y -q
 
 # npm modules
 npm install -g bower
-npm install -g express
-npm install -g express-generator
 npm install -g grunt
 npm install -g grunt-cli
 npm install -g hotnode
