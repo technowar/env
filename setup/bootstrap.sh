@@ -5,6 +5,7 @@ apt-get update -y -q
 apt-get install build-essential -y -q
 apt-get install vim -y -q
 apt-get install git -y -q
+apt-get install rake -y -q
 
 # Java
 apt-get install openjdk-7-jre -y -q

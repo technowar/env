@@ -30,7 +30,6 @@ Run `vagrant ssh` to login to your box
 ## and includes
 
 * bower
-* express
 * grunt-cli
 * yo
 
