@@ -10,6 +10,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # please see the online documentation at vagrantup.com.
 
   # Every Vagrant virtual environment requires a box to build off of.
+
   config.vm.box = "ubuntu/precise64"
 
   # Disable automatic box update checking. If you disable this, then
@@ -20,13 +21,16 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Create a forwarded port mapping which allows access to a specific port
   # within the machine from a port on the host machine. In the example below,
   # accessing "localhost:8080" will access port 80 on the guest machine.
-	config.vm.network :forwarded_port, guest: 8080, host: 8080
-	for port in 3000..3100
-		config.vm.network :forwarded_port, guest: port, host: port
-	end
+
+  config.vm.network :forwarded_port, guest: 8080, host: 8080
+
+  for port in 3000..3100
+    config.vm.network :forwarded_port, guest: port, host: port
+  end
 
   # Create a private network, which allows host-only access to the machine
   # using a specific IP.
+
   config.vm.network :private_network, ip: "10.1.43.69"
 
   # Create a public network, which generally matched to bridged network.
@@ -42,6 +46,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # the path on the host to the actual folder. The second argument is
   # the path on the guest to mount the folder. And the optional third
   # argument is a set of non-required options.
+
   config.vm.synced_folder "~/Documents/NodeVagrant/project/", "/var/nodevagrant/project/", nfs: true
 
   # Provider-specific configuration so you can fine-tune various
@@ -123,6 +128,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   #
   #   chef.validation_client_name = "ORGNAME-validator"
 
-	config.vm.provision "shell", path: "setup/bootstrap.sh"
+  config.vm.provision "shell", path: "setup/bootstrap.sh"
 
 end

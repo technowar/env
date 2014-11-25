@@ -19,5 +19,6 @@ npm install -g bower
 npm install -g grunt
 npm install -g grunt-cli
 npm install -g hotnode
+npm install -g mocha
 npm install -g webit
 npm install -g yo
