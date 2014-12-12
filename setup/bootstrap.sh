@@ -7,9 +7,6 @@ apt-get install vim -y -q
 apt-get install git -y -q
 apt-get install rake -y -q
 
-# Java
-apt-get install openjdk-7-jre -y -q
-
 # Node.js
 curl -sL https://deb.nodesource.com/setup | sudo bash -
 apt-get install nodejs -y -q
