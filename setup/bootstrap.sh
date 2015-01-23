@@ -6,6 +6,7 @@ apt-get install build-essential -y -q
 apt-get install vim -y -q
 apt-get install git -y -q
 apt-get install rake -y -q
+apt-get install ack-grep -y -q
 
 # Node.js
 curl -sL https://deb.nodesource.com/setup | sudo bash -
