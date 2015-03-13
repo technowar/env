@@ -13,6 +13,7 @@ curl -sL https://deb.nodesource.com/setup | sudo bash -
 apt-get install nodejs -y -q
 
 # npm modules
+npm install -g bower
 npm install -g hotnode
 npm install -g mocha
 npm install -g webit
