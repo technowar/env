@@ -15,6 +15,7 @@ apt-get install nodejs -y -q
 # npm modules
 npm install -g bower
 npm install -g grunt-cli
+npm install -g gulp-cli
 npm install -g hotnode
-npm install -g mocha
+npm install -g karma-cli
 npm install -g webit
