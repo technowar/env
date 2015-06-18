@@ -2,7 +2,10 @@
 apt-get update -y -q
 
 # Dependencies
-apt-get install build-essential -y -q
+apt-get install install build-essential python-software-properties -y -q
+add-apt-repository ppa:git-core/ppa
+
+apt-get update -y -q
 apt-get install vim -y -q
 apt-get install git -y -q
 apt-get install rake -y -q
