@@ -39,7 +39,7 @@ Just modify `setup/bootstrap.sh` depending what you need.
 
 ## Networking
 
-The box is configured to have a static IP of `10.1.43.69`, ports `:8080` and `:3000` up to `:3100`.
+The box is configured to have a static IP of `10.1.43.69`, and ports `:3000` to `:3010`.
 
 ## Shared folders
 
