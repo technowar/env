@@ -2,7 +2,7 @@
 apt-get update -y -q
 
 # Dependencies
-apt-get install install build-essential python-software-properties -y -q
+apt-get install build-essential python-software-properties -y -q
 add-apt-repository ppa:git-core/ppa
 
 apt-get update -y -q
@@ -12,7 +12,7 @@ apt-get install rake -y -q
 apt-get install ack-grep -y -q
 
 # Node.js
-curl -sL https://deb.nodesource.com/setup | sudo bash -
+curl -sL https://deb.nodesource.com/setup_4.x | sudo bash -
 apt-get install nodejs -y -q
 
 # npm modules
