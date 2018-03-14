@@ -25,13 +25,6 @@ Run `vagrant ssh` to login to your box
 
 * vim
 * git
-* rake
-
-## and includes
-
-* bower
-* grunt-cli
-* yo
 
 and many more.
 
