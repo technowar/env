@@ -9,5 +9,5 @@ apt-get update -y -q
 apt-get install vim git rake ack-grep -y -q
 
 # Node.js
-curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 apt-get install nodejs -y -q
