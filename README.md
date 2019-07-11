@@ -1,6 +1,4 @@
-# Node.js Box for Vagrant
-
-A Node.js box for Vagrant for my own consumption.
+# env
 
 ## Requirements
 
@@ -10,10 +8,10 @@ A Node.js box for Vagrant for my own consumption.
 ## To install
 
 Clone the repository
->`$ git clone git@github.com:technowar/NodeVagrant.git`
+>`$ git clone git@github.com:technowar/env.git`
 
 Open the folder
->`$ cd NodeVagrant`
+>`$ cd env`
 
 Run `vagrant up` inside the folder
 >`$ vagrant up`
@@ -21,18 +19,9 @@ Run `vagrant up` inside the folder
 Run `vagrant ssh` to login to your box
 >`$ vagrant ssh`
 
-## It installs
-
-* vim
-* git
-
 and many more.
 
 Just modify `setup/bootstrap.sh` depending what you need.
-
-## Networking
-
-The box is configured to have a static IP of `10.1.43.69`, and ports `:3000` to `:3010`.
 
 ## Shared folders
 
