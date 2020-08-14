@@ -1,7 +1,7 @@
 # Dependencies     
 add-apt-repository ppa:git-core/ppa
 add-apt-repository ppa:neovim-ppa/stable
-curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 
 apt-get update -yq
 apt-get upgrade -yq
